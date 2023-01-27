@@ -1,5 +1,5 @@
 # Electronic-voting
-Prototype implementation of a reliable and efficient electronic voting protocol. For a voting system consisting of only two possibilities of votes which, for simplicity, we will consider $m=1$ (YES) and $m=0$ (NO), we design a protocol where a mother entity generates a public key and a private key and distributes one copy of the public key amognst those who can vote. The protocol is as follows:\
+Prototype implementation of a reliable and efficient electronic voting protocol which allows to obtain the election's results by performing the decrypting operation just once. For a voting system consisting of only two possibilities of votes which, for simplicity, we will consider $m=1$ (YES) and $m=0$ (NO), we design a protocol where a mother entity generates a public key and a private key and distributes one copy of the public key amognst those who can vote. The protocol is as follows:\
 $1)$ $\underline{\text{Key generation}}$:\
 Let $(N,p,q)$ be an RSA key, where $p$ and $q$ are prime numbers and $N=pq$. The public key is $pk=N$ and the secret key is $sk=d$, where $d$ is such that $d\equiv 1 \ mod \ N$ and $d\equiv 0 \ mod \ (p-1)(q-1)$.
 
