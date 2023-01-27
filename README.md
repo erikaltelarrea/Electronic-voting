@@ -8,3 +8,6 @@ Let $N$ be Bob's public key. Then Alice can ecnrypt a message $m\in\mathbb{Z}_N$
 
 $3)$ $\underline{\text{Decrypting algorithm}}$:\
 Bob, using his private key, $d$ and a ciphertext $c$ computes $m=\frac{c^d\ mod \ N^2-1}{N}$.
+
+Let $Enc$ be the encrypting fuction, $Dec$ the decrypting function and let $c_1=Enc(m_1)$ and $c_2=Enc(m_2)$. By the construction of our protocol, $Dec(c_1·c_2)=m_1+m_2$.
+
